@@ -1,3 +1,19 @@
+<html>
+<head></head>
+<body>
+
+<p>
+    <a href="databaseQueries.php?query=2010"> Movies made before 2010 </a>
+</p>
+
+<p>
+    <a href="databaseQueries.php?query=Marvel Studios"> Movies made by Marvel Studios </a>
+</p>
+</body>
+
+
+</html>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -19,7 +35,9 @@ if($db->connect_errno){
 
 }
 
-$sql_query = file_get_contents("marvelMovies.sql");
-$qr = $db->query($sql_query);
-$qr->close();
-$db->close();
+
+
+//$sql_query = file_get_contents("marvelMovies.sql");
+//$qr = $db->query($sql_query);
+//$qr->close();
+//$db->close();

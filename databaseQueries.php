@@ -15,18 +15,25 @@ $db = new mysqli(
 // test if connection was established, and print any errors
 if($db->connect_errno) {
     die('Connectfailed[' . $db->connect_error . ']');
+
 }
 
 
-    $sql = "SELECT * FROM marvelMovies WHERE productionStudio LIKE '%Columbia Pictures%'";
+//    $sql = "SELECT * FROM marvelMovies WHERE productionStudio LIKE '%Columbia Pictures%'";
 
-    $result = $db->query($sql);
-    echo 'test';
-    while($row = $result->fetch_array()){
-    echo "<p>" . $row['title']. "</p>";
+    //$result = $db->query($sql);
+    //echo 'test';
+    //while($row = $result->fetch_array()){
+    //echo "<p>" . $row['title']. "</p>";
+  //  }
+
+$query = $_GET["query"];
+
+if ($query = '2010') {
+    $sql = "SELECT * FROM marvelMovies WHERE yearReleased < 2010";
+echo "Movies released before 2010:  " . $query;
+
     }
-
-
 
 
     $qr->close();
