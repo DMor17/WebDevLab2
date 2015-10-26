@@ -18,11 +18,11 @@
 // creates a form and stores information, directing it to formResponse.php via the post method.
 
 <form action="formResponse.php" method="post">
-    Forename: <input type="text" name="forename"><br>
-    Surname: <input type="text" name="surname"><br>
-    Superpower: <input type="text" name="superpower"><br>
+    Forename: <input type="text" id="forename"><br>
+    Surname: <input type="text" id="surname"><br>
+    Superpower: <input type="text" id="superpower"><br>
     DOB : <input type="date" name="date"><br>
-    <input type="submit">
+    <input type="submit" value="Add superhero">
 </form>
 
 
