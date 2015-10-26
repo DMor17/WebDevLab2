@@ -1,22 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: daniel
- * Date: 26/10/15
- * Time: 10:53
- */
-$forename = $_POST["forename"];
-$surname = $_POST["surname"];
-echo $forename . $surname . " SSRFG";
-?>
-
 <html>
-
 <body>
-echo $forename . $surname . " dsfjsdjf";
+
+Forename: <?php echo $_POST["forename"]; ?><br>
+Surname: <?php echo $_POST["surname"]; ?>
 
 </body>
-
-
-</html>
-
+</html> 
