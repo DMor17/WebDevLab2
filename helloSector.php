@@ -20,7 +20,8 @@
 <form action="formResponse.php" method="post">
     Forename: <input type="text" name="forename"><br>
     Surname: <input type="text" name="surname"><br>
-    Superpower: Flying  <input type="radio" name="flying"><br>
+    Superpower: <input type="text" name="superpower"><br>
+    DOB : <input type="date" name="date"><br>
     <input type="submit">
 </form>
 

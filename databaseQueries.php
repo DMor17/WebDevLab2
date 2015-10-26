@@ -38,5 +38,14 @@ if ($query = '2010') {
     }
 }
 
+if ($query = 'Marvel Studios') {
+    $sql = "SELECT * FROM marvelMovies WHERE productionStudios LIKE 'Marvel Studios'";
+    $result = $db->query($sql);
+    while ($row = $result->fetch_array()) {
+        echo "<p>" . $row['title'] . "</p>";
+
+    }
+}
+
     $result->close();
     $db->close();
