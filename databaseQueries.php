@@ -23,7 +23,7 @@ if($db->connect_errno) {
     $result = $db->query($sql);
 
     while($row = $result->fetch_array()){
-    echo "<p>" . $row['superheroName'] . "</p>";
+    echo "<p>" . $row . "</p>";
     }
 
     $qr->close();
