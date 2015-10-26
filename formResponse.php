@@ -5,6 +5,6 @@
  * Date: 26/10/15
  * Time: 10:53
  */
-$forename = $_post["forename"];
-$surname = $_post["surname"];
+$forename = $_POST["forename"];
+$surname = $_POST["surname"];
 echo $forename . $surname;

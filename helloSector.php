@@ -16,10 +16,12 @@
 
 
 // Creates a form and stores information, directing it to formResponse.php via the post method.
+
 <form action="formResponse.php" method="post">
-    <label>Forename</label><input type=“text” name=“forename”>
-    <label>Surname</label><input type=“text” name=“surname”>
+    <label> <input type=text name=“forename”/> </label>
+   <label> Surname: <input type=text name=“surname”/> </label>
     <input type="submit" value="Submit">
 </form>
+
 </body>
 </html>
