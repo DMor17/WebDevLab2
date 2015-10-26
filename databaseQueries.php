@@ -18,12 +18,12 @@ if($db->connect_errno) {
 }
 
 
-    $sql = "SELECT * FROM marvelMovies";
+    $sql = "SELECT * FROM marvelMovies WHERE productionStudio LIKE '%Columbia Pictures%'";
 
     $result = $db->query($sql);
 
     while($row = $result->fetch_array()){
-    echo "<p>" . $row . "</p>";
+    echo "<p>" . $row['title']. "</p>";
     }
 
     $qr->close();
