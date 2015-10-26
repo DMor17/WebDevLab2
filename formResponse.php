@@ -25,4 +25,5 @@ die('Connectfailed[' . $db->connect_error . ']');
 
 }
 $insert_query = "INSERT INTO superhero " . "($Forename, $Surname, $Superpower, $Date)";
+$db->query($insert_query);
 ?>
