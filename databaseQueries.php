@@ -31,10 +31,12 @@ $query = $_GET["query"];
 
 if ($query = '2010') {
     $sql = "SELECT * FROM marvelMovies WHERE yearReleased < 2010";
-echo "Movies released before 2010:  " . $query;
+    $result = $db->query($sql);
+    while ($row = $result->fetch_array()) {
+        echo "<p>" . $row['title'] . "</p>";
 
     }
+}
 
-
-    $qr->close();
+    $result->close();
     $db->close();
